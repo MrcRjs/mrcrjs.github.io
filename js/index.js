@@ -9,42 +9,42 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var portfolioData = [{
 	title: "Wikipedia Viewer",
 	subtitle: "Wikipedia article search",
-	img: "https://drive.google.com/uc?id=1idspjWjC-JS0zampqvCtU2uMpTutsOr8",
+	img: "./static/wiki.png",
 	url: "http://codepen.io/MrcRjs/full/JEPPWo/",
 	dark: false
 }, {
 	title: "Random Quote Machine",
 	subtitle: "Chuck Norris random quotes",
-	img: "https://drive.google.com/uc?id=1k_VN0Yfpf6uE57sFDLhIrl3TvU2STAyI",
+	img: "./static/quote.png",
 	url: "https://codepen.io/MrcRjs/full/jwRYaM/",
 	dark: false
 }, {
 	title: "Weather",
 	subtitle: "Weather application using weather API",
-	img: "https://drive.google.com/uc?id=138m8u2KwH8GudIu37p24yrAB38cL4p5V",
+	img: "./static/weather.png",
 	url: "http://codepen.io/MrcRjs/full/MeaGaZ",
 	dark: true
 }, {
 	title: "Pomodoro",
 	subtitle: "Pomodoro clock",
-	img: "https://drive.google.com/uc?id=1VAJxl3vUb-Nz_YaO8I17aPMj-0vBOFIA",
+	img: "./static/pomodoro.png",
 	url: "https://codepen.io/MrcRjs/full/YQgYvK/",
 	dark: false
 }, {
 	title: "Jiddu Krishnamurti",
 	subtitle: "Krishnamurti tribute page",
-	img: "https://drive.google.com/uc?id=130AV2obcHptrZJWgh4Lr21ZuFUG5iWVW",
+	img: "./static/tribute.png",
 	url: "https://codepen.io/MrcRjs/full/xOzdLj"
 }, {
 	title: "Twitchtv Stream Status",
 	subtitle: "Check stream status different",
-	img: "https://drive.google.com/uc?id=1ZdyixrXGGBJXz86pmKvHpBUNzZZ8o2Qo",
+	img: "./static/twitch.png",
 	url: "https://codepen.io/MrcRjs/full/gREpbm/",
 	dark: false
 }, {
 	title: "Kalk",
 	subtitle: "Javascript calculator",
-	img: "https://drive.google.com/uc?id=1tgavw_B3POGoNlHvVkxI6G_cvDlNY2AB",
+	img: "./static/kalk.png",
 	url: "http://codepen.io/MrcRjs/full/QEbVZX",
 	dark: false
 }];
