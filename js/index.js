@@ -37,7 +37,7 @@ var portfolioData = [{
 	url: "https://codepen.io/MrcRjs/full/xOzdLj"
 }, {
 	title: "Twitchtv Stream Status",
-	subtitle: "Check stream status different",
+	subtitle: "Check stream status of different channels",
 	img: "./static/twitch.png",
 	url: "https://codepen.io/MrcRjs/full/gREpbm/",
 	dark: false
@@ -76,7 +76,10 @@ var Navbar = function (_React$Component) {
 				null,
 				React.createElement(
 					"nav",
-					{ className: "site-header fixed-top py-1", style: { 'background-color': this.props.color || "default" } },
+					{
+						className: "site-header fixed-top py-1",
+						style: { "background-color": this.props.color || "default" }
+					},
 					React.createElement(
 						"div",
 						{ className: "container d-flex flex-column flex-md-row justify-content-between" },
@@ -125,21 +128,6 @@ var Navbar = function (_React$Component) {
 							"a",
 							{ className: "py-2 d-none d-md-inline-block", href: "#" },
 							"Enterprise"
-						),
-						React.createElement(
-							"a",
-							{ className: "py-2 d-none d-md-inline-block", href: "#" },
-							"Support"
-						),
-						React.createElement(
-							"a",
-							{ className: "py-2 d-none d-md-inline-block", href: "#" },
-							"Pricing"
-						),
-						React.createElement(
-							"a",
-							{ className: "py-2 d-none d-md-inline-block", href: "#" },
-							"Cart"
 						)
 					)
 				)
@@ -430,7 +418,9 @@ var PortfolioItem = function PortfolioItem(_ref) {
 	var colorStyle = dark ? "bg-dark text-white" : "bg-light";
 	return React.createElement(
 		"div",
-		{ className: "mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden " + colorStyle },
+		{
+			className: "mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden " + colorStyle
+		},
 		React.createElement(
 			"div",
 			{ className: "my-3 p-3" },
@@ -456,7 +446,6 @@ var PortfolioItem = function PortfolioItem(_ref) {
 					"max-height": "500px",
 					"border-radius": "21px 21px 0 0",
 					"background-image": "url(" + img + ")"
-
 				}
 			})
 		)
@@ -771,6 +760,62 @@ var ComputerSVG = function ComputerSVG(_ref3) {
 	);
 };
 
+var ContactForm = function ContactForm() {
+	return React.createElement(
+		"div",
+		{ className: "pt-5" },
+		React.createElement(
+			"div",
+			{ className: "col-xs-12 col-md-8 offset-md-2" },
+			React.createElement(
+				"h3",
+				{ style: { color: "white" } },
+				"Get in Touch"
+			),
+			React.createElement(
+				"form",
+				{ method: "POST", action: "https://formspree.io/devmarcorojas@gmail.com" },
+				React.createElement(
+					"div",
+					{ className: "form-group" },
+					React.createElement("input", {
+						type: "hidden",
+						name: "_subject",
+						value: "Contact request from portfolio page"
+					}),
+					React.createElement("input", {
+						className: "form-control",
+						id: "contactEmail",
+						type: "email",
+						name: "_replyto",
+						placeholder: "Your email",
+						required: true
+					})
+				),
+				React.createElement(
+					"div",
+					{ className: "form-group" },
+					React.createElement("textarea", {
+						className: "form-control",
+						name: "message",
+						placeholder: "Your message",
+						required: true
+					})
+				),
+				React.createElement(
+					"div",
+					{ className: "form-group" },
+					React.createElement(
+						"button",
+						{ className: "btn btn-primary btn-block", type: "submit" },
+						"Send"
+					)
+				)
+			)
+		)
+	);
+};
+
 var App = React.createClass({
 	displayName: "App",
 
@@ -778,7 +823,7 @@ var App = React.createClass({
 		return {
 			currentPage: "home",
 			progress: 30,
-			bgColor: 'rgba(0, 0, 0, .85)'
+			bgColor: "rgba(0, 0, 0, .85)"
 		};
 		this.handleProgress = this.handleProgress.bind(this);
 		this.restartComputerAnim = this.restartComputerAnim.bind(this);
@@ -876,13 +921,18 @@ var App = React.createClass({
 								React.createElement(
 									"p",
 									{ className: "lead text-justify" },
-									"Motivated programmer with experience building web and mobile applications, based in ",
+									"Motivated programmer with experience building web and mobile applications, based in",
+									" ",
 									React.createElement(
 										"strong",
 										null,
 										React.createElement(
 											"a",
-											{ className: "location", target: "_blank", href: "https://www.google.com.mx/maps/search/76F32RR2%2B8G" },
+											{
+												className: "location",
+												target: "_blank",
+												href: "https://www.google.com.mx/maps/search/76F32RR2%2B8G"
+											},
 											"76F32RR2+8G"
 										)
 									)
@@ -899,8 +949,9 @@ var App = React.createClass({
 					},
 					React.createElement(
 						"div",
-						{ className: "col-lg-10 offset-lg-1 px-0" },
-						React.createElement(Carousel, null)
+						{ className: "col-lg-10 offset-lg-1 px-0 py-3" },
+						React.createElement(Carousel, null),
+						React.createElement(ContactForm, null)
 					)
 				)
 			),
