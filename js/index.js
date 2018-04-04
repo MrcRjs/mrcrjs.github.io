@@ -415,7 +415,7 @@ var PortfolioItem = function PortfolioItem(_ref) {
 	    _ref$url = _ref.url,
 	    url = _ref$url === undefined ? "#" : _ref$url;
 
-	var colorStyle = dark ? "bg-dark text-white" : "bg-light";
+	var colorStyle = dark ? "bg-dark text-white" : "bg-medium";
 	return React.createElement(
 		"div",
 		{
@@ -807,7 +807,7 @@ var ContactForm = function ContactForm() {
 					{ className: "form-group" },
 					React.createElement(
 						"button",
-						{ className: "btn btn-primary btn-block", type: "submit" },
+						{ className: "btn btn-secondary btn-block", type: "submit" },
 						"Send"
 					)
 				)

@@ -113,3 +113,6 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
 }
+.bg-medium {
+  background-color: #ddd;
+}
