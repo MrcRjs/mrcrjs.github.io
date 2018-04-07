@@ -6,7 +6,15 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var portfolioData = [{
+var portfolioData = [
+{
+	title: "Keras Basic Neural Network",
+	subtitle: "Example for experimentation with a neural network in Keras",
+	img: "https://raw.githubusercontent.com/MrcRjs/Keras-Example/master/images/operation.png",
+	url: "https://github.com/MrcRjs/Keras-Example",
+	dark: false
+},
+{
 	title: "Wikipedia Viewer",
 	subtitle: "Wikipedia article search",
 	img: "./static/wiki.png",
@@ -23,7 +31,7 @@ var portfolioData = [{
 	subtitle: "Weather application using weather API",
 	img: "./static/weather.png",
 	url: "http://codepen.io/MrcRjs/full/MeaGaZ",
-	dark: true
+	dark: false
 }, {
 	title: "Pomodoro",
 	subtitle: "Pomodoro clock",
@@ -415,7 +423,7 @@ var PortfolioItem = function PortfolioItem(_ref) {
 	    _ref$url = _ref.url,
 	    url = _ref$url === undefined ? "#" : _ref$url;
 
-	var colorStyle = dark ? "bg-dark text-white" : "bg-medium";
+	var colorStyle = dark ? "bg-dark text-white" : "bg-medium text-white";
 	return React.createElement(
 		"div",
 		{
@@ -444,7 +452,7 @@ var PortfolioItem = function PortfolioItem(_ref) {
 					width: "80%",
 					height: "300px",
 					"max-height": "500px",
-					"border-radius": "21px 21px 0 0",
+					"border-radius": "10px 10px 0 0",
 					"background-image": "url(" + img + ")"
 				}
 			})
