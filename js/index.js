@@ -93,7 +93,7 @@ var Navbar = function (_React$Component) {
 						{ className: "container d-flex flex-column flex-md-row justify-content-between" },
 						React.createElement(
 							"a",
-							{ "class": "py-2", href: "#" },
+							{ "className": "py-2", href: "#" },
 							React.createElement(
 								"svg",
 								{
