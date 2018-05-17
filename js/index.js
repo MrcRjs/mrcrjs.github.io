@@ -119,24 +119,19 @@ var Navbar = function (_React$Component) {
 						),
 						React.createElement(
 							"a",
-							{ className: "py-2 d-none d-md-inline-block", href: "#" },
-							"Tour"
+							{ className: "py-2 d-none d-md-inline-block", href: "#portfolioCarousel" },
+							"Portfolio"
 						),
 						React.createElement(
 							"a",
 							{ className: "py-2 d-none d-md-inline-block", href: "#" },
-							"Product"
+							"Blog"
 						),
 						React.createElement(
 							"a",
-							{ className: "py-2 d-none d-md-inline-block", href: "#" },
-							"Features"
+							{ className: "py-2 d-none d-md-inline-block", href: "https://www.dropbox.com/s/avnsfj31vn5wjjv/MarcoRojasResumev3.0.0.pdf?dl=0" },
+							"Download Resumé"
 						),
-						React.createElement(
-							"a",
-							{ className: "py-2 d-none d-md-inline-block", href: "#" },
-							"Enterprise"
-						)
 					)
 				)
 			);
