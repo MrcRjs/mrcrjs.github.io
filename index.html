@@ -42,6 +42,36 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <style>
+        .skill-grid { font-size: 1rem; }
+        .skill-grid .list-inline-item { margin-bottom: 0.75rem; }
+        .skill-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.65rem 0.35rem 0.45rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            background-color: #fff;
+        }
+        .skill-chip i { font-size: 2rem; line-height: 1; flex-shrink: 0; }
+        .skill-chip .skill-label {
+            font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #343a40;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+        .skill-context { font-size: 1rem; line-height: 1.6; }
+        .skill-context .context-title {
+            font-family: Muli, sans-serif;
+            font-weight: 800;
+            text-transform: none;
+            letter-spacing: normal;
+            color: #343a40;
+        }
+    </style>
 
 </head>
 
@@ -177,55 +207,104 @@
         <div class="w-100">
             <h2 class="mb-5">Skills</h2>
 
-            <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-            <ul class="list-inline dev-icons">
+            <p class="lead mb-4">Languages and tools I use in production and in community teaching, with labels always visible so nothing depends on hovering an icon.</p>
+
+            <div class="subheading mb-3">Programming languages &amp; tools</div>
+            <ul class="list-inline dev-icons skill-grid mb-4" aria-label="Programming languages and tools">
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="JavaScript"
-                       class="fab fa-js-square social-icons-circle javascript"></i>
+                    <span class="skill-chip">
+                        <i class="fab fa-js-square social-icons-circle javascript" aria-hidden="true"></i>
+                        <span class="skill-label">JavaScript</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="MongoDB"
-                       class="fa fa-leaf social-icons-circle mongodb"></i>
+                    <span class="skill-chip">
+                        <i class="fa fa-leaf social-icons-circle mongodb" aria-hidden="true"></i>
+                        <span class="skill-label">MongoDB</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="Express.js"
-                       class="fab fa-node-js social-icons-circle express"></i>
+                    <span class="skill-chip">
+                        <i class="fab fa-node-js social-icons-circle express" aria-hidden="true"></i>
+                        <span class="skill-label">Express.js</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="React"
-                       class="fab fa-react social-icons-circle react"></i>
+                    <span class="skill-chip">
+                        <i class="fab fa-react social-icons-circle react" aria-hidden="true"></i>
+                        <span class="skill-label">React</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="Git"
-                       class="fab fa-git-alt  social-icons-circle git"></i>
+                    <span class="skill-chip">
+                        <i class="fab fa-git-alt social-icons-circle git" aria-hidden="true"></i>
+                        <span class="skill-label">Git</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="Python"
-                       class="fab fa-python social-icons-circle python"></i>
+                    <span class="skill-chip">
+                        <i class="fab fa-python social-icons-circle python" aria-hidden="true"></i>
+                        <span class="skill-label">Python</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="Flask"
-                       class="fa fa-pepper-hot social-icons-circle flask"></i>
+                    <span class="skill-chip">
+                        <i class="fa fa-pepper-hot social-icons-circle flask" aria-hidden="true"></i>
+                        <span class="skill-label">Flask</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="TensorFlow"
-                       class="fa fa-cross social-icons-circle tensorflow"></i>
+                    <span class="skill-chip">
+                        <i class="fa fa-cross social-icons-circle tensorflow" aria-hidden="true"></i>
+                        <span class="skill-label">TensorFlow</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="PHP"
-                       class="fab fa-php social-icons-circle php"></i>
+                    <span class="skill-chip">
+                        <i class="fab fa-java social-icons-circle java" aria-hidden="true"></i>
+                        <span class="skill-label">Java</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="Java"
-                       class="fab fa-java social-icons-circle java"></i>
+                    <span class="skill-chip">
+                        <i class="fab fa-docker social-icons-circle docker" aria-hidden="true"></i>
+                        <span class="skill-label">Docker</span>
+                    </span>
                 </li>
                 <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="Docker"
-                       class="fab fa-docker social-icons-circle docker"></i>
+                    <span class="skill-chip">
+                        <i class="fab fa-linux social-icons-circle linux" aria-hidden="true"></i>
+                        <span class="skill-label">Linux</span>
+                    </span>
                 </li>
-                <li class="list-inline-item">
-                    <i data-toggle="tooltip" data-placement="bottom" title="Linux"
-                       class="fab fa-linux social-icons-circle linux"></i>
+            </ul>
+
+            <div class="subheading mb-3">Where these map to <a href="#experience">experience</a> &amp; <a href="#volunteering">volunteering</a></div>
+            <ul class="fa-ul skill-context mb-4">
+                <li class="mb-2">
+                    <span class="fa-li text-primary"><i class="fas fa-mobile-alt" aria-hidden="true"></i></span>
+                    <span class="context-title">Mobile &amp; client</span>
+                    — JavaScript, React, and related patterns: <a href="#experience">IQVIA</a> (React Native lead, TypeScript and Flow migration); <a href="#experience">Badaníe</a> (React Native iOS/Android app, REST, Bluetooth). <a href="#volunteering">Resilient Coders</a> mentorship includes React for full-stack demos.
+                </li>
+                <li class="mb-2">
+                    <span class="fa-li text-primary"><i class="fas fa-server" aria-hidden="true"></i></span>
+                    <span class="context-title">Backend, APIs &amp; data</span>
+                    — Node.js, Express, MongoDB: <a href="#experience">Human Care Systems</a> (integration engine on Node.js and AWS); <a href="#portfolio">Portfolio</a> microservices (Express and MongoDB on Glitch). <a href="#volunteering">Resilient Coders</a> (Node, Express, MongoDB, React stack for cohort projects).
+                </li>
+                <li class="mb-2">
+                    <span class="fa-li text-primary"><i class="fas fa-code-branch" aria-hidden="true"></i></span>
+                    <span class="context-title">Languages &amp; breadth</span>
+                    — JavaScript, Python, Java, PHP: coursework and <a href="#portfolio">portfolio</a> (algorithms across Python, C++, Java, JavaScript, Ruby); certifications below include JavaScript-focused tracks. Python ecosystem: <a href="#volunteering">Major League Hacking</a> intro labs (Twitter API, deployment from notebooks).
+                </li>
+                <li class="mb-2">
+                    <span class="fa-li text-primary"><i class="fas fa-shipping-fast" aria-hidden="true"></i></span>
+                    <span class="context-title">Shipping &amp; environments</span>
+                    — Git, Docker, Linux: <a href="#volunteering">MLH</a> Docker workshop series; <a href="#volunteering">Free Code Camp</a> local leader for Node.js, Git, and front-end tracks; day-to-day production ownership at <a href="#experience">IQVIA</a> and prior roles (reviews, releases, monitoring).
+                </li>
+                <li>
+                    <span class="fa-li text-primary"><i class="fas fa-brain" aria-hidden="true"></i></span>
+                    <span class="context-title">ML &amp; web frameworks (learning &amp; teaching)</span>
+                    — Flask, TensorFlow: academic and side-project interest; strongest public tie is <a href="#volunteering">MLH</a> Python AI intro sessions. See <a href="#portfolio">portfolio</a> for OpenCV and image-processing work in C++.
                 </li>
             </ul>
 
@@ -318,7 +397,7 @@
 
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="resume-content">
-                    <h3 class="mb-0">Software Engineer Local Leader</h3>
+                    <h3 class="mb-0">Software Engineer Instructor</h3>
                     <div class="subheading mb-3">Free Code Camp</div>
                     <p>• Organized <strong>Node.js</strong>, <strong>Git</strong>, and <strong>front-end</strong> tracks for 300+ learners: recurring sessions, hands-on exercises that shipped small features, logistics, materials, and retrospectives.</p>
                 </div>
